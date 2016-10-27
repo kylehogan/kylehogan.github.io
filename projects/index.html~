@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+
+
+<section id="one">
+  <div class="container">
+      <header class="major">
+	<h2>Current Projects</h2>
+      </header>
+      <p> My current research is within the Modular Approach to Cloud Security (MACS), Massachusetts Open Cloud (MOC), and PRIMES projects. <a href="http://www.bu.edu/macs/">MACS</a> is a NSF Frontier project collaboration between Boston University, University of Connecticut, Massachusetts Institute of Technology, and Northeastern that focuses on building secure cloud services. The <a href="http://info.massopencloud.org/">MOC</a> is a public cloud in the open cloud exchange model that provides tenants with the ability to mix and match providers for different services, use federated identity between different providers, and obtain strong isolation through its bare metal sevices. <a href="http://math.mit.edu/research/highschool/primes/index.php">PRIMES</a> is a program for high school students organized by MIT.</p>
+      <h3>Universal Composability</h3>
+      <p>Universal Composability guarantees that a protocol proved UC secure will remain secure regardless of what other protocols it is composed with or whether other instances of the protocol are running concurrently.</p>
+      <div class="features">
+        <article>
+          <!--<a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>-->
+          <div class="inner">
+            <h4>UC Network Time Protocol</h4>
+            <p>NTP is used to proide good time to clients and is relied on for many security ritical protocols including certificate verification. This project focuses on providing a UC proof of its security that would allow it to be used as a subroutine in proofs for other protocols like TLS.</p>
+          </div>
+        </article>
+        <article>
+          <!--<a href="#" class="image"><img src="/images/pic02.jpg" alt="" /></a>-->
+          <div class="inner">
+            <h4>Universally Composable OpenStack</h4>
+            <p>OpenStack is an open source, modular cloud computing framework. This project intends to provide a proof of security for an entire cloud by composing proofs for its components.</p>
+          </div>
+        </article>
+      </div>
+      <h3>Bare Metal Clouds</h3>
+      <p>Bare metal clouds provide users with physical machines rather than virtual ones.</p>
+      <div class="features">
+        <article>
+          <!--<a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>-->
+          <div class="inner">
+            <h4>Secure Cloud</h4>
+            <p>This project seeks to addres the security concerns specific to bare metal clouds. We use a TPM as a hardware root of trust and measure each step of the boot process along with the machine's firmare before booting the client's image or attaching their storage. If the values in the TPM's registers do not match those on a whitelist, the machine will not finish booting and encryption keys to the client's stroage will not be releassed.</p>
+          </div>
+        </article>
+        <article>
+          <!--<a href="#" class="image"><img src="/images/pic02.jpg" alt="" /></a>-->
+          <div class="inner">
+            <h4>Hardware Isolation Layer</h4>
+            <p>HIL is the bare metal cloud platform for the MOC. It provides network isolation for physical nodes and works with the Bare Metal Imaging project to quickly allocate and deallocate nodes. Secure Cloud is built on top of HIL.</p>
+          </div>
+        </article>
+      </div>
+      <h3>Cloud Side Channels</h3>
+      <p>Side channels become a problem whenever there is shared hardware. HIL avoids most traditional side channels by giving tenants an entrire physical machine, but some of the network infrastructure is still shared between tenants.</p>
+      <div class="features">
+        <article>
+          <!--<a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>-->
+          <div class="inner">
+            <h4>Network Flooding</h4>
+            <p>This project seeks to exploit shared network infrastructure by using an observed attacker bandwidth to determine victim activity. Initially it focused of virtualized instances colocated on the same MOC node. These instances share a physical NIC so an attacker that is able to consume all the avialable bandwith out of the node is able to observe when a colocated victim begins sending packets through the corresponding drop in their own bandwidth.</p>
+          </div>
+        </article>
+      </div>
+  </div>
+</section>
+
+<!--
+<section id="one" >
+    <div class="container">
+        {% for post in site.posts limit:1 %}
+            <article>
+                <header>
+                    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                </header>
+                <section class="post-content">
+                    {{ post.excerpt }}
+                </section>
+                <section class="special">
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button special">Read More</a></li>
+                    </ul>
+                </section>
+            </article>
+        {% endfor %}
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="features">
+        {% for post in site.posts offset:1 %}
+            <article>
+                <section class="excerpt">
+                <header>
+                    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                </header>
+                
+                    {{ post.content | truncatewords: 30 }}
+                </section>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a></li>
+                    </ul>
+                </footer>
+                <div class="clear"></div>
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+-->
