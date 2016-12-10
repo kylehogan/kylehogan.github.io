@@ -9,13 +9,13 @@ layout: default
       <header class="major">
 	<h2>Current Projects</h2>
       </header>
-      <p> My current research is within the Modular Approach to Cloud Security (MACS), Massachusetts Open Cloud (MOC), and PRIMES projects. <a href="http://www.bu.edu/macs/">MACS</a> is a NSF Frontier project collaboration between Boston University, University of Connecticut, Massachusetts Institute of Technology, and Northeastern that focuses on building secure cloud services. The <a href="http://info.massopencloud.org/">MOC</a> is a public cloud in the open cloud exchange model that provides tenants with the ability to mix and match providers for different services, use federated identity between different providers, and obtain strong isolation through its bare metal sevices. <a href="http://math.mit.edu/research/highschool/primes/index.php">PRIMES</a> is a program for high school students organized by MIT.</p>
-      <h3>Universal Composability</h3>
+      <p> My current research is within the Modular Approach to Cloud Security (MACS), Massachusetts Open Cloud (MOC), and PRIMES projects. <a href="http://www.bu.edu/macs/">MACS</a> is a NSF Frontier project collaboration that focuses on building secure cloud services. The <a href="http://info.massopencloud.org/">MOC</a> is a public cloud in the open cloud exchange model that provides tenants with the ability to mix and match providers for different services, use federated identity between different providers, and obtain strong isolation through its bare metal sevices. <a href="http://math.mit.edu/research/highschool/primes/index.php">PRIMES</a> is a math and computer science enrichment program for high school students organized by MIT.</p>
+      <h3 id="UC">Universal Composability</h3>
       <p>Universal Composability guarantees that a protocol proved UC secure will remain secure regardless of what other protocols it is composed with or whether other instances of the protocol are running concurrently.</p>
       <div class="features">
         <article>
           <a href="/downloads/MACS_NTP.pdf" class="image"><img src="/images/MACS_NTP.png" alt="" target="_blank" /></a>
-          <div class="inner">
+          <div id="UCNTP" class="inner">
             <h4>UC Network Time Protocol</h4>
             <p>NTP is used to proide good time to clients and is relied on for many security ritical protocols including certificate verification. This project focuses on providing a UC proof of its security that would allow it to be used as a subroutine in proofs for other protocols like TLS.</p>
           </div>
@@ -28,7 +28,7 @@ layout: default
           </div>
         </article>
       </div>
-      <h3>Bare Metal Clouds</h3>
+      <h3 id="BMC">Bare Metal Clouds</h3>
       <p>Bare metal clouds provide users with physical machines rather than virtual ones.</p>
       <div class="features">
         <article>
@@ -46,16 +46,46 @@ layout: default
           </div>
         </article>
       </div>
-      <h3>Cloud Side Channels</h3>
+      <h3 id="SC">Cloud Side Channels</h3>
       <p>Side channels become a problem whenever there is shared hardware. HIL avoids most traditional side channels by giving tenants an entrire physical machine, but some of the network infrastructure is still shared between tenants.</p>
       <div class="features">
         <article>
           <a href="/downloads/network_bandwidth.pdf" class="image"><img src="/images/network_bandwidth.png" alt="" target="_blank" /></a>
           <div class="inner">
-            <h4>Network Flooding</h4>
-            <p>This project seeks to exploit shared network infrastructure by using an observed attacker bandwidth to determine victim activity. Initially it focused of virtualized instances colocated on the same MOC node. These instances share a physical NIC so an attacker that is able to consume all the avialable bandwith out of the node is able to observe when a colocated victim begins sending packets through the corresponding drop in their own bandwidth.</p>
+            <h4><a id="network-flooding">Network Flooding</a></h4>
+            <p>This project seeks to exploit shared network infrastructure by using an observed attacker bandwidth to determine victim activity. Initially it focused of virtualized instances colocated on the same MOC node. These instances share a physical NIC so an attacker that is able to consume all the avialable bandwith out of the node is able to observe when a colocated victim begins sending packets through the corresponding drop in their own bandwidth. <!-- <br />
+	    Agarwal, Yatharth, et al. <a href="http://link.springer.com/chapter/10.1007/978-3-319-48965-0_56">"Moving in Next Door: Network Flooding as a Side Channel in Cloud Environments."</a> International Conference on Cryptology and Network Security. Springer International Publishing, 2016. --></p>
           </div>
         </article>
+      </div>
+      <header class="major">
+	<h2>Past Projects</h2>
+      </header>
+      <p>Previously I have worked on projects while I was an intern at MIT Lincoln Laboratory in Group 53 and as a student resercher in the Scalable Elastic Systems Architecture lab at Boston University. I have also done research in computational Neuroscience with the Neuromorphics Laboratory at BU.</p>
+      <div class="features">
+        <article>
+          <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing" class="image"><img src="/images/SecDev-MPC.png" alt=""/></a>
+          <div class="inner">
+            <h4 id="vulnMPC">MPC for Vulnerability Data Aggregation</h4>
+            <p>A common problem organizations face is determining how to prioritize security updates and patches to minimize the risk of vulnerabilities in their infrastructure. This project uses secure multiparty computation (MPC) to allow organizations to perform joint analytics while maintaining the confidentiality of their own data. We designed and implemented MPC protocols for two computations with such privacy concerns: selecting IP addresses to blacklist and aggregating the output from vulnerability scanners. <a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211501/secdev16-final53.pdf">Paper</a> <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing">Slides</a> </p>
+          </div>
+        </article>
+	<!---
+        <article>
+          <a href="/downloads/UC-OpenStack-MACS.pdf" class="image"><img src="/images/UC-OpenStack-MACS.png" alt="" target="_blank" /></a>
+          <div class="inner">
+            <h4>Distributed Fetal MRI Reconstruction</h4>
+            <p>OpenStack is an open source, modular cloud computing framework. This project intends to provide a proof of security for an entire cloud by composing proofs for its components.</p>
+          </div>
+        </article>
+        <article>
+          <a href="/downloads/MACS_NTP.pdf" class="image"><img src="/images/MACS_NTP.png" alt="" target="_blank" /></a>
+          <div class="inner">
+            <h4>Computational Neuroscience</h4>
+            <p>NTP is used to proide good time to clients and is relied on for many security ritical protocols including certificate verification. This project focuses on providing a UC proof of its security that would allow it to be used as a subroutine in proofs for other protocols like TLS.</p>
+          </div>
+        </article>
+	-->
       </div>
   </div>
 </section>
