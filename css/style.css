@@ -41,13 +41,13 @@
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #d68f39;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #5795bf !important;
 			text-decoration: none;
 		}
 
@@ -259,7 +259,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #49bf9d;
+			border-color: #d68f39;
 		}
 
 	.select-wrapper {
@@ -370,7 +370,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #49bf9d;
+			border-color: #d68f39;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -737,7 +737,7 @@
 				}
 
 				ul.feature-icons li:before {
-					background: #4acaa8;
+					background: #5795bf;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -908,8 +908,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #d68f39;
+			color: #d68f39 !important;
 		}
 
 		input[type="submit"]:active,
@@ -917,8 +917,8 @@
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #d68f39;
+			color: #d68f39 !important;
 		}
 
 		input[type="submit"].icon,
@@ -963,8 +963,8 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #d68f39;
+			border-color: #d68f39;
 			color: #ffffff !important;
 		}
 
@@ -1046,7 +1046,7 @@
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #d68f39;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -1085,7 +1085,7 @@
 		}
 
 			#header > nav ul li {
-				border-top: solid 2px #5ccfb0;
+				border-top: solid 2px #d68f39;
 				display: block;
 				padding: 0;
 			}
@@ -1103,6 +1103,10 @@
 					text-decoration: none;
 				}
 
+				#header > nav ul li a:hover{
+				    color: #8eb6d1 !important;
+				}
+				
 					#header > nav ul li a.active, #header > nav ul li .cc-active {
 						background: #fff;
 						color: #4acaa8 !important;
@@ -1110,6 +1114,15 @@
 
 				#header > nav ul li:first-child {
 					border-top: 0;
+				}
+
+				#header > nav ul li:last-child {
+					border-top: solid 2px #ad120f;
+				}
+
+				
+				#header > nav ul li:nth-child(2) {
+					border-top: solid 2px #5795bf;
 				}
 
 /* Footer */
