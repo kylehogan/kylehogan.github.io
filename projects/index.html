@@ -14,17 +14,21 @@ layout: default
       <p>Universal Composability guarantees that a protocol proved UC secure will remain secure regardless of what other protocols it is composed with or whether other instances of the protocol are running concurrently.</p>
       <div class="features">
         <article>
-          <a href="/downloads/MACS_NTP.pdf" class="image"><img src="/images/MACS_NTP.png" alt="" target="_blank" /></a>
-          <div id="UCNTP" class="inner">
-            <h4>UC Network Time Protocol</h4>
-            <p>NTP is used to proide good time to clients and is relied on for many security ritical protocols including certificate verification. This project focuses on providing a UC proof of its security that would allow it to be used as a subroutine in proofs for other protocols like TLS.</p>
-          </div>
-        </article>
-        <article>
           <a href="/downloads/UC-OpenStack-MACS.pdf" class="image"><img src="/images/UC-OpenStack-MACS.png" alt="" target="_blank" /></a>
           <div class="inner">
             <h4>Universally Composable OpenStack</h4>
             <p>OpenStack is an open source, modular cloud computing framework. This project intends to provide a proof of security for an entire cloud by composing proofs for its components.</p>
+          </div>
+        </article>
+      </div>
+      <h3 id="cryptocurrencies">Monero</h3>
+      <p>Monero is an anonymity focused cryptocurrency that is designed to hide the sender, recipient, and amount of each transaction as well as prevent different transactions from being linked to the same user.</p>
+      <div class="features">
+        <article>
+          <a href="https://docs.google.com/presentation/d/19a1vhwISZ7l2P1W661qcE5mcxvTSnR4oMw1IYf2Pc7Y/edit?usp=sharing" class="image"><img src="/images/Monero.png" alt=""/></a>
+          <div class="inner">
+            <h4>Enhancing Monero Privacy</h4>
+            <p>Recent attacks have shown that the timing of transactions can often reveal the true sender. This work focuses on reducing the effectiveness of temporal analysis without introducing new weaknesses into Monero.</p>
           </div>
         </article>
       </div>
@@ -46,30 +50,34 @@ layout: default
           </div>
         </article>
       </div>
-      <h3 id="SC">Cloud Side Channels</h3>
-      <p>Side channels become a problem whenever there is shared hardware. HIL avoids most traditional side channels by giving tenants an entrire physical machine, but some of the network infrastructure is still shared between tenants.</p>
-      <div class="features">
-        <article>
-          <a href="/downloads/network_bandwidth.pdf" class="image"><img src="/images/network_bandwidth.png" alt="" target="_blank" /></a>
-          <div class="inner">
-            <h4><a id="network-flooding">Network Flooding</a></h4>
-            <p>This project seeks to exploit shared network infrastructure by using an observed attacker bandwidth to determine victim activity. Initially it focused of virtualized instances colocated on the same MOC node. These instances share a physical NIC so an attacker that is able to consume all the avialable bandwith out of the node is able to observe when a colocated victim begins sending packets through the corresponding drop in their own bandwidth. <!-- <br />
-	    Agarwal, Yatharth, et al. <a href="http://link.springer.com/chapter/10.1007/978-3-319-48965-0_56">"Moving in Next Door: Network Flooding as a Side Channel in Cloud Environments."</a> International Conference on Cryptology and Network Security. Springer International Publishing, 2016. --></p>
-          </div>
-        </article>
-      </div>
+    
       <header class="major">
 	<h2>Past Projects</h2>
       </header>
       <p>Previously I have worked on projects while I was an intern at MIT Lincoln Laboratory in Group 53 and as a student resercher in the Scalable Elastic Systems Architecture lab at Boston University. I have also done research in computational Neuroscience with the Neuromorphics Laboratory at BU.</p>
       <div class="features">
-        <article>
-          <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing" class="image"><img src="/images/SecDev-MPC.png" alt=""/></a>
-          <div class="inner">
-            <h4 id="vulnMPC">MPC for Vulnerability Data Aggregation</h4>
-            <p>A common problem organizations face is determining how to prioritize security updates and patches to minimize the risk of vulnerabilities in their infrastructure. This project uses secure multiparty computation (MPC) to allow organizations to perform joint analytics while maintaining the confidentiality of their own data. We designed and implemented MPC protocols for two computations with such privacy concerns: selecting IP addresses to blacklist and aggregating the output from vulnerability scanners. <a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211501/secdev16-final53.pdf">Paper</a> <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing">Slides</a> </p>
+	 <article>
+          <a href="/downloads/MACS_NTP.pdf" class="image"><img src="/images/MACS_NTP.png" alt="" target="_blank" /></a>
+          <div id="UCNTP" class="inner">
+            <h4>UC Network Time Protocol</h4>
+            <p>NTP is used to proide good time to clients and is relied on for many security ritical protocols including certificate verification. This project focuses on providing a UC proof of its security that would allow it to be used as a subroutine in proofs for other protocols like TLS.</p>
           </div>
-        </article>
+         </article>
+	 <article>
+           <a href="/downloads/network_bandwidth.pdf" class="image"><img src="/images/network_bandwidth.png" alt="" target="_blank" /></a>
+           <div class="inner">
+             <h4><a id="network-flooding">Network Flooding</a></h4>
+             <p>This project seeks to exploit shared network infrastructure by using an observed attacker bandwidth to determine victim activity. Initially it focused of virtualized instances colocated on the same MOC node. These instances share a physical NIC so an attacker that is able to consume all the avialable bandwith out of the node is able to observe when a colocated victim begins sending packets through the corresponding drop in their own bandwidth. <!-- <br />
+	    Agarwal, Yatharth, et al. <a href="http://link.springer.com/chapter/10.1007/978-3-319-48965-0_56">"Moving in Next Door: Network Flooding as a Side Channel in Cloud Environments."</a> International Conference on Cryptology and Network Security. Springer International Publishing, 2016. --></p>
+           </div>
+         </article>
+         <article>
+           <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing" class="image"><img src="/images/SecDev-MPC.png" alt=""/></a>
+           <div class="inner">
+             <h4 id="vulnMPC">MPC for Vulnerability Data Aggregation</h4>
+             <p>A common problem organizations face is determining how to prioritize security updates and patches to minimize the risk of vulnerabilities in their infrastructure. This project uses secure multiparty computation (MPC) to allow organizations to perform joint analytics while maintaining the confidentiality of their own data. We designed and implemented MPC protocols for two computations with such privacy concerns: selecting IP addresses to blacklist and aggregating the output from vulnerability scanners. <a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211501/secdev16-final53.pdf">Paper</a> <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing">Slides</a> </p>
+           </div>
+         </article>
 	<!---
         <article>
           <a href="/downloads/UC-OpenStack-MACS.pdf" class="image"><img src="/images/UC-OpenStack-MACS.png" alt="" target="_blank" /></a>
