@@ -1,84 +1,86 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="fonts/css/all.css"/>
+	      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	      <link rel="canonical" href="https://html5-templates.com/" />
+	      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	      <script src="script.js"></script>
+	      <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Kyle Hogan</title>
+</head>
+<body>
+	  <div id="desktop">
+        <div class="window activeWindow" data-title="About Me">
+            <img src="me.jpg" alt="Kyle Hogan" style="float:left;width:200px;margin:10px 10px 10px 10px;">
+			      <p> I am currently PhD student at MIT advised by Professor Srini Devadas. My interests are primarily in applied cryptography, network security, side channels, technology policy, and anonymous communication.
+            </p>
+            <p>Outside of research, my hobbies include: </p>
+            <p>
+                <ul class="fa-ul">
+                    <li><i class="fa fa-biking" style="color:#36c8a4"></i>Cycling</li>
+                    <li><i class="fa fa-beer" style="color:#36c8a4"></i>Homebrew</li>
+                    <li><i class="fa fa-book" style="color:#36c8a4"></i>Books</li>
+                    <li><i class="fa fa-hiking" style="color:#36c8a4"></i>Hiking</li>
+                    <li><i class="fa fa-gamepad" style="color:#36c8a4"></i>Games</li>
+                </ul>
+            </p>
+		    </div>
+		    <div class="window minimizedWindow" data-title="Resume">
+			      <embed src="resume.pdf" width="100%" height="100%" />
+		    </div>
+        <div class="window minimizedWindow" data-title="Projects">
+			      <p>My primary ongoing projects are in the areas of anonymous communication, privacy in internet protocols, and data privacy.</p>
+            <h2>Interection Attacks</h2>
+            <p></p>
+            <h3>Improved Path Selection on Overlay Networks</h3>
+            <p></p>
+            <h2>Privacy Preserving Online Advertising</h2><p></p>
+            <p>For a listing of past publications please see my Google scholar <a href="https://scholar.google.com/citations?user=YfbA4G0AAAAJ&hl=en">profile</a>.</p>
+		    </div>
+        <div class="window minimizedWindow" data-title="Contact">
+			      <p>I'm reachable at: <b> klhogan [at] mit [dot] edu </b></p>
+		    </div>
+        <!-- <div class="window minimizedWindow" data-title="Hobbies">
+			       <p>
+             <ul class="fa-ul">
+             <li><i class="fa fa-biking" style="color:#36c8a4"></i>Cycling</li>
+             <li><i class="fa fa-beer" style="color:#36c8a4"></i>Homebrew</li>
+             <li><i class="fa fa-book" style="color:#36c8a4"></i>Books</li>
+             <li><i class="fa fa-hiking" style="color:#36c8a4"></i>Hiking</li>
+             <li><i class="fa fa-gamepad" style="color:#36c8a4"></i>Games</li>
+             </ul>
+             </p>
+		         </div> -->
+        <div class="window minimizedWindow" data-title="Reading">
+			      <p>Some of my favorite speculative fiction short stories:</p>
+            <p><a href="http://strangehorizons.com/fiction/the-algorithms-for-love/">“The Algorithms for Love”</a> - Ken Liu</p>
+            <p><a href="https://archive.org/details/195508IF0000">“Franchise”</a> -  Isaac Asimov </p>
+            <p><a href="https://www.theregister.com/2001/01/10/the_reg_brings_you_more/">“An End to Hunger”</a> - China Miéville </p>
+            <p><a href="http://www.slate.com/articles/technology/future_tense/2016/04/mika_model_a_new_short_story_from_paolo_bacigalupi.html">“Mika Model”</a> - Paolo Bacigalupi</p>
+            <p><a href="http://www.lightspeedmagazine.com/fiction/flower-mercy-needle-chain/">“Flower, Mercy, Needle, Chain”</a> and <a href="http://www.lightspeedmagazine.com/fiction/swanwatch/">“Swanwatch”</a> -  Yoon Ha Lee </p>
+            
+            
+		    </div>
+        <!-- <div class="window minimizedWindow" data-title="Strava">
+             <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' csp="script-src https://www.strava.com/"  src='https://www.strava.com/athletes/10729078/activity-summary/02505226279ae3ab4cf05622e34753e9bba74e4a'></iframe>
+             </div> -->
+		
+		<div id="taskbar">		
+		</div>
+		
+		<!-- <div id="icons">
+			   <a class="openWindow" data-id="0">Open first</a>
+			   <a class="openWindow" data-id="1">Open second</a>
+			   <a class="openWindow" data-id="2">Open third</a>
+			   <a class="openWindow" data-id="3">Welcome screen</a>
+		     </div> -->
+		<a href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy; HTML5-Templates.com</a>	
+		<!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
+	</div>
+</body>
 
-
-<!-- One -->
-    <section id="one">
-        <div class="container">
-            <header class="major">
-                <!--<h2>Testing, Testing</h2>-->
-                <h3>About Me</h3>
-            </header>
-            <p>I am currently a second year PhD student at MIT advised by Professor Srini Devadas. My interests are primarily in applied cryptography, computer systems, network security, secure hardware, side channels, and cloud computing. I work n developing protocols that allow sensitive tasks to be run on only semi-trusted resources. Current cloud architectures require a high level of trust in both the provider and other tenants. Reducing this trust and providing enforceable security guarantees is difficult, particularly against high privilege system components, but is necessary for providing confidentiality and integrity for outsourced tasks.</p>
-        </div>
-    </section>
-
-
-    <section id="two">
-        <div class="container">
-            <h3>Interests</h3>
-            <!--<p>work on this...</p>-->
-            <ul class="feature-icons">
-                <li class="fa-server">Systems</li>
-                <li class="fa-cloud">Clouds</li>
-                <li class="fa-key">Cryptography</li>
-                <li class="fa-list-alt">Network Security</li>
-                <li class="fa-bolt">Side Channels</li>
-                <li class="fa-users">Multiparty Computation</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="three">
-      <div class="container">
-	        <h3>Publications and Presentations</h3>
-          <p>Malte Möser, Kyle Soska, Ethan Heilman, Kevin Lee, Henry Heffan, Shashvat Srivastava, Kyle Hogan, Jason Hennessey, Andrew Miller, Arvind Narayanan, Nicolas Christin. "An Empirical Analysis of Traceability in the Monero Blockchain." PoPETs 2018
-	            <br />
-              <p> Ilia A. Lebedev, Kyle Hogan, Srinivas Devadas. "Invited Paper: Secure Boot and Remote Attestation in the Sanctum Processor." CSF 2018
-	                <br />
-                  <p> Amin Mosayyebzadeh, Gerardo Ravago, Apoorve Mohan, Ali Raza, Sahil Tikale, Nabil Schear, Trammell Hudson, Jason Hennessey, Naved Ansari, Kyle Hogan, Charles Munson, Larry Rudolph, Gene Cooperman, Peter Desnoyers, Orran Krieger. "A Secure Cloud with Minimal Provider Trust." HotCloud 2018 
-	                    <br />
-                      <p>  Michael Vai, David Whelihan, Jacob Leemaster, Haley Whitman, Willahelm Wan, Yunsi Fei, Roger Khazan, Ilia A. Lebedev, Kyle Hogan, Srinivas Devadas. "Mission Assurance: Beyond Secure Processing." QRS Companion 2018 
-	                        <br />
-                          <p> Ilia A. Lebedev, Kyle Hogan, Jules Drean, David Kohlbrenner, Dayeol Lee, Krste Asanovic, Dawn Song, Srinivas Devadas. "Sanctorum: A lightweight security monitor for secure enclaves." CoRR abs/1812.10605 (2018) 
-	                            <br />
-	<p>Ran Canetti, Kyle Hogan, Aanchal Malhotra, and Mayank Varia. "A Universally Composable Treatment of Network Time."</a>Computer Security Foundations, 2017 <br />
-	  <br />
-	Yatharth Agarwal, Vishnu Murale, Jason Hennessey, Kyle Hogan, and Mayank Varia. <a href="http://link.springer.com/chapter/10.1007/978-3-319-48965-0_56">"Moving in Next Door: Network Flooding as a Side Channel in Cloud Environments."</a> International Conference on Cryptology and Network Security. Springer International Publishing, 2016. <br />
-	  <br />
-	  Kyle Hogan, Noah Luther, Nabil Schear, Emily Shen, David Stott, Sophia Yakoubov, and Arkady Yerukhimovich <a href="http://cybersec-prod.s3.amazonaws.com/secdev/wp-content/uploads/2016/10/05211501/secdev16-final53.pdf">"Secure Multiparty Computation for Cooperative Cyber Risk Assessment"</a> IEEE SevDev 2016. <a href="https://docs.google.com/presentation/d/1YYR4JWU0JrFqUVDwTo4PqaVgkxip40MKIAZZjFB42wE/edit?usp=sharing">Slides</a> </p>
-      </div>
-    </section>
-    
-<!--
-    <section id="three">
-        <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>work on this too</p>
-            <div class="features">
-                <article>
-                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Possibly broke spacetime</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Terraformed a small moon</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Snapped dark matter in the wild</h4>
-                        <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
--->
+</html>
