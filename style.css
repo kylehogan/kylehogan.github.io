@@ -36,6 +36,7 @@ input,select{vertical-align:middle}
     background: #EEE;
 	border-radius: 5px;
 	z-index: 1000;
+    overflow:hidden;
 }
 .window.closed {
 	display: none;
@@ -118,6 +119,7 @@ input,select{vertical-align:middle}
     border: 2px solid #000;
     margin: 2px;
 	border-radius: 0 0 5px 5px;
+    overflow: scroll;
 }
 .windowHeader > strong {
     float: left;
@@ -127,6 +129,7 @@ input,select{vertical-align:middle}
 }
 .taskbarPanel {
     display: inline-block;
+    /* flex:auto; */
     border: 2px solid #000;
     border-radius: 5px;
     line-height: 24px;
@@ -151,7 +154,10 @@ input,select{vertical-align:middle}
 }
 #taskbar {
 	position: absolute;
-	height: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+	/* height: 32px; */
 	border-top: 2px solid #000;
 	bottom: 0;
 	left: 0;
@@ -247,4 +253,7 @@ input,select{vertical-align:middle}
 #window3 {    top: 9px;    left: 10px;	}
 #window2 {    left: -118px;	}
 #window1 .wincontent {    width: auto;    height: 300px;	}
+#taskbar {
+    flex-direction: column;
+}
 }
